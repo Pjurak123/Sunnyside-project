@@ -107,7 +107,12 @@ img {
   flex-direction: column-reverse;
 }
 
-.text-container {
+.brand-row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.brand-text-container {
   background-color: var(--clr-neutral-white);
   max-width: 80%;
   margin: 4rem auto;
@@ -137,6 +142,71 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/* Audience section */
+
+.audience_container {
+  display: flex;
+  color: rgba(254, 120, 103, 0.05);
+  flex-direction: column;
+}
+
+.audience-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.audience-text-container {
+  background-color: var(--clr-neutral-white);
+  max-width: 80%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.audience__h2 {
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--clr-neutral-dark-blue);
+  padding-bottom: 2rem;
+}
+
+.audience__p {
+  font-family: var(--ff-primary);
+  color: var(--clr-neutral-grayish-blue);
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.audience__a {
+  border-bottom: 4px solid var(--clr-primary-soft-red);
+  font-family: var(--ff-secondary);
+  font-weight: 900;
+  color: var(--clr-neutral-dark-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Fruit container Cherry + Orange  */
+
+.fruit-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.cherry-container {
+  background: url("/images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cherry-container-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+/* Client testimonials */
 
 /* Responsive navigation media query */
 @media (max-width: 600px) {
