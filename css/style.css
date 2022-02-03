@@ -258,41 +258,133 @@ img {
 /* Client testimonials */
 
 .testimonial-container {
-  border: 1px solid red;
+  background-color: var(--clr-neutral-white);
 }
 
 .clients-container {
-  border: 1px solid green;
   margin: 0 auto;
   width: 90%;
 }
 
-.row {
+.testimonial-row {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   text-align: center;
-  border: 1px solid yellow;
+  margin-bottom: 5rem;
 }
 
 .client__title {
   font-family: var(--ff-secondary);
+  font-size: 1rem;
+  color: var(--clr-neutral-grayish-blue);
+  margin-top: 3rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
 .users-container {
-  border: 1px solid blue;
   margin: 0 auto;
   text-align: center;
+  width: 80%;
 }
 
 .users__img {
   border-radius: 50%;
   display: block;
   margin: 0 auto 1.5rem;
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 4rem;
+  width: 4rem;
   text-align: center;
+}
+
+.users__p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--clr-neutral-dark-blue);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.users__h4 {
+  font-family: var(--ff-secondary);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.users__p__p {
+  font-family: var(--ff-primary);
+  font-size: 0.7rem;
+  color: var(--clr-neutral-grayish-blue);
+}
+
+/* Image gallery */
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #71bca8;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.info-container {
+  max-width: 23.48rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.info-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 2rem 0 0;
+  max-width: 23.48rem;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.info-item {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-dark-footer);
+}
+
+.info-item:hover {
+  color: var(--clr-neutral-white);
+  cursor: pointer;
+}
+
+.media-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 23.48rem;
+  width: 60%;
+}
+
+.media-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 5rem 0 0;
+  padding: 0 0 3.5rem;
+  overflow: hidden;
+}
+
+.media-item:hover {
+  color: var(--clr-neutral-white);
+  cursor: pointer;
 }
 
 /* Responsive navigation media query */
