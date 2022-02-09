@@ -29,7 +29,7 @@
                 <li class="nav-item">About</li>
                 <li class="nav-item">Services</li>
                 <li class="nav-item">Projects</li>
-                <li class="nav-item">Contact</li>
+                <li class="nav-item"><a href="#" class="nav-contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -49,9 +49,11 @@
   <section class="brand-container">
     <div class="brand-row">
       <div class="brand-text-container">
-        <h2 class="brand__h2">Transform your brand</h2>
-        <p class="brand__p">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a href="#" class="brand__a">Learn more</a>
+        <div class="brand-text-box">
+          <h2 class="brand__h2">Transform your brand</h2>
+          <p class="brand__p">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#" class="brand__a">Learn more</a>
+        </div>
       </div>
       <div class="egg-container">
         <img src="/images/mobile/image-transform.jpg" alt="egg-image" class="egg-image">
@@ -67,9 +69,11 @@
         <img src="/images/mobile/image-stand-out.jpg" alt="glass-image" class="glass-image">
       </div>
       <div class="audience-text-container">
-        <h2 class="audience__h2">Stand out to the right audience</h2>
-        <p class="audience__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we will build and extend your brand in digital places.</p>
-        <a href="#" class="audience__a">Learn more</a>
+        <div class="audience-text-box">
+          <h2 class="audience__h2">Stand out to the right audience</h2>
+          <p class="audience__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we will build and extend your brand in digital places.</p>
+          <a href="#" class="audience__a">Learn more</a>
+        </div>
       </div>
     </div>
   </section>
@@ -99,8 +103,8 @@
 
   <section class="testimonial-container">
     <div class="clients-container">
+      <h1 class="client__title">Client testimonials</h1>
       <div class="testimonial-row">
-        <h1 class="client__title">Client testimonials</h1>
         <div class="users-container">
           <img src="/images/image-emily.jpg" alt="emily" class="users__img">
           <p class="users__p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
@@ -125,15 +129,23 @@
 
   <!-- Flex 4 images -->
   <section class="gallery-container">
-    <div class="gallery-row">
-      <div class="first-half-container">
-        <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles">
-        <img src="/images/mobile/image-gallery-cone.jpg" alt="cone">
+    <div class="grid-container">
+      <div class="grid-item">
+         <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="milk-bottle full-size"> 
       </div>
-      <div class="seconde-half-container">
-        <img src="/images/mobile/image-gallery-orange.jpg" alt="orange2">
-        <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+
+      <div class="grid-item">
+        <img src="/images/mobile/image-gallery-orange.jpg" alt="orange2" class="orange-img full-size">
       </div>
+      
+      <div class="grid-item">
+        <img src="/images/mobile/image-gallery-cone.jpg" alt="cone" class="cone full-size">
+      </div>
+
+      <div class="grid-item">
+          <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="sugar-cube full-size">
+      </div>
+      
     </div>
   </section>
 
@@ -149,10 +161,10 @@
     </div>
     <div class="media-container">
       <ul class="media-list">
-        <li class="media-item"><img src="/images/icon-facebook.svg" alt="facebook"></li>
-        <li class="media-item"><img src="/images/icon-instagram.svg" alt="instagram"></li>
-        <li class="media-item"><img src="/images/icon-twitter.svg" alt="twitter"></li>
-        <li class="media-item"><img src="/images/icon-pinterest.svg" alt="pinterest"></li>
+        <li class="media-item"><img src="/images/icon-facebook.svg" alt="facebook" class="media-logo"></li>
+        <li class="media-item"><img src="/images/icon-instagram.svg" alt="instagram" class="media-logo"></li>
+        <li class="media-item"><img src="/images/icon-twitter.svg" alt="twitter" class="media-logo"></li>
+        <li class="media-item"><img src="/images/icon-pinterest.svg" alt="pinterest" class="media-logo"></li>
       </ul>
     </div>
   </footer>

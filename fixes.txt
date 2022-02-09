@@ -1,0 +1,8 @@
+- hover on social media icons doesnt work 
+- learn more has wrong underline
+- create dropdown menu
+- active buttons on nav
+- change images on bigger screen on grid template
+
+
+
