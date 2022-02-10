@@ -87,25 +87,114 @@ img {
   padding: 0;
 }
 
+.nav-item {
+  color: var(--clr-neutral-white);
+  text-decoration: none;
+}
+
 .nav-contact {
   border-radius: 3rem;
   background-color: var(--clr-neutral-white);
-  padding: 1rem;
+  color: var(--clr-neutral-dark-blue);
+  padding: 1.3rem 2rem;
   font-family: var(--ff-secondary);
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.nav-contact:hover {
+  color: var(--clr-neutral-white);
+  background-color: rgb(121, 210, 252);
+}
+
+/* HAMBURGER SECTION */
+
+.burger {
+  position: relative;
+  display: none;
+  width: 40px;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: flex;
+  cursor: default;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  right: 15px;
+  top: 60px;
+  min-width: 320px;
+  padding: 20px 0;
+  background-color: white;
+}
+
+.burger-menu::before {
+  position: absolute;
+  content: "";
+  border-left: 32px solid transparent;
+  border-bottom: 32px solid #fff;
+  top: -30px;
+  right: 0;
+}
+
+.closed {
+  display: none;
+}
+
+.burger-menu li {
+  list-style: none;
+  margin: 1.3rem 0px;
+}
+
+.burger-menu li:last-child {
+  margin: 30px 0;
+}
+
+.burger-menu li a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
+  color: hsl(232, 10%, 55%);
+}
+
+.burger-menu li:last-child a {
+  color: hsl(212, 27%, 19%);
+  background-color: hsl(51, 100%, 49%);
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-family: "Fraunces";
+  font-size: 14px;
+}
+
+.burger .line {
+  background-color: rgba(255, 255, 255, 0.876);
+  height: 1px;
+  margin-bottom: 7px;
+  width: 25px;
+}
+
+/* END OF HAMBURGER SECTION */
 .header-section {
   font-family: var(--ff-secondary);
   font-size: 1.3rem;
   color: var(--clr-neutral-white);
+  display: flex;
+  flex-direction: column;
   letter-spacing: 0.2rem;
   margin: auto;
   margin-top: 4rem;
   max-width: 80%;
   justify-content: center;
   text-align: center;
+}
+
+.header-h1 {
+  min-width: 280px;
+  margin: 0 auto;
 }
 
 .arrow-image {
@@ -152,12 +241,16 @@ img {
 }
 
 .brand__a {
-  border-bottom: 4px solid var(--clr-primary-yellow);
+  box-shadow: 0px -6px hsla(51, 100%, 49%, 0.308) inset;
   font-family: var(--ff-secondary);
   font-weight: 900;
   color: var(--clr-neutral-dark-blue);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.brand__a:hover {
+  box-shadow: 0px -6px hsl(51, 100%, 49%) inset;
 }
 
 /* Audience section */
@@ -200,12 +293,15 @@ img {
 }
 
 .audience__a {
-  border-bottom: 4px solid var(--clr-primary-soft-red);
+  box-shadow: 0px -6px 0px hsla(7, 99%, 70%, 0.301) inset;
   font-family: var(--ff-secondary);
   font-weight: 900;
   color: var(--clr-neutral-dark-blue);
   text-transform: uppercase;
   text-decoration: none;
+}
+.audience__a:hover {
+  box-shadow: 0px -6px 0px hsla(7, 99%, 70%) inset;
 }
 
 /* Fruit container Cherry + Orange  */
@@ -434,23 +530,21 @@ img {
 }
 
 /* Responsive navigation media query */
-@media (max-width: 600px) {
-  .container
-    > .navigation-container
-    > .nav
-    > .nav-list
-    > .nav-item:not(:first-child) {
+@media (max-width: 690px) {
+  .nav-list {
     display: none;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media (min-width: 601px) {
-  .icon {
-    display: none;
-  }
+@media (max-width: 689px) {
 }
-
-/* Orange and cherry part media  */
 
 /* TABLET VERSION */
 

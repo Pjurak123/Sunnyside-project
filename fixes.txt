@@ -1,8 +1,2 @@
-- hover on social media icons doesnt work 
-- learn more has wrong underline
-- create dropdown menu
-- active buttons on nav
-- change images on bigger screen on grid template
-
-
-
+under 375 px graphic an photo section needs fix
+social media icons on hove fix
